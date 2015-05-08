@@ -1,0 +1,62 @@
+<templateSet group="EmberJs">
+  <template name="g" value="this.get('$first$')$end$" description="Inserts get method" toReformat="false" toShortenFQNames="true">
+    <variable name="first" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="p" value="$First$: $Secend$$END$" description="Inserts property expression" toReformat="true" toShortenFQNames="true">
+    <variable name="First" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Secend" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pf" value="$INDEX$: function($PARAM$) {&#10;  return $EXPRESSION$&#10;}.property($Name$)$END$" description="Inserts property expression" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="EXPRESSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="case" value="switch($VAR$)&#10;{&#10;case $Value1$:&#10;  $Expression$&#10;  break;&#10;case $Value2$:&#10;  $Expression$&#10;  break;&#10;default:&#10;  $End$&#10;}" description="Inserts case expression" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Value1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Value2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="End" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($Var$){&#10;  $Expression$&#10;}" description="Inserts if expression" toReformat="false" toShortenFQNames="true">
+    <variable name="Var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if ($Var$){&#10;  $Expression$&#10;} else {&#10;  $Expression1$&#10;}" description="Inserts if else expression" toReformat="false" toShortenFQNames="true">
+    <variable name="Var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Expression1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
