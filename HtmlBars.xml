@@ -1,0 +1,29 @@
+<templateSet group="HtmlBars">
+  <template name="{" value="{{$var$}}" description="Inserts {{}}" toReformat="true" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="each" value="{{#each $item$ in $property$}}&#10;    {{$item$}}&#10;{{/each}}" description="Inserts each expressions" toReformat="false" toShortenFQNames="true">
+    <variable name="item" expression="" defaultValue="item" alwaysStopAt="true" />
+    <variable name="property" expression="" defaultValue="property" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="{{#if $expression$}}&#10;    {{$expressionA$}}&#10;{{/if}}" description="Inserts if(){} expression" toReformat="true" toShortenFQNames="true">
+    <variable name="expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="expressionA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
