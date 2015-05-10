@@ -59,4 +59,17 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="fe" value="$array$.forEach(function($item$) {&#10;  $item$;&#10;});" description="Inserts forEach exoression" toReformat="false" toShortenFQNames="true">
+    <variable name="array" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="Handlebars" value="true" />
+    </context>
+  </template>
 </templateSet>
