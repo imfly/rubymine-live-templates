@@ -28,7 +28,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="case" value="switch($VAR$)&#10;{&#10;case $Value1$:&#10;  $Expression$&#10;  break;&#10;case $Value2$:&#10;  $Expression$&#10;  break;&#10;default:&#10;  $End$&#10;}" description="Inserts case expression" toReformat="false" toShortenFQNames="true">
+  <template name="c" value="switch($VAR$)&#10;{&#10;case $Value1$:&#10;  $Expression$&#10;  break;&#10;case $Value2$:&#10;  $Expression$&#10;  break;&#10;default:&#10;  $End$&#10;}" description="Inserts case expression" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Value1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="Expression" expression="" defaultValue="" alwaysStopAt="true" />
