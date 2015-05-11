@@ -6,11 +6,10 @@
       <option name="HTML" value="true" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
       <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
-  <template name="each" value="{{#each $item$ in $property$}}&#10;    {{$item$}}&#10;{{/each}}" description="Inserts each expressions" toReformat="false" toShortenFQNames="true">
+  <template name="e" value="{{#each $item$ in $property$}}&#10;    {{$item$}}&#10;{{/each}}" description="Inserts each expressions" toReformat="false" toShortenFQNames="true">
     <variable name="item" expression="" defaultValue="item" alwaysStopAt="true" />
     <variable name="property" expression="" defaultValue="property" alwaysStopAt="true" />
     <context>
@@ -18,9 +17,38 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="if" value="{{#if $expression$}}&#10;    {{$expressionA$}}&#10;{{/if}}" description="Inserts if(){} expression" toReformat="true" toShortenFQNames="true">
+  <template name="if" value="{{#if $expression$}}&#10;    {{$expressionA$}}&#10;{{/if}}" description="Inserts if() expression" toReformat="true" toShortenFQNames="true">
     <variable name="expression" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="expressionA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="i" value="{{input type=$type$ class=$class$ id=$id$ placeholder=$text$ value=$value$ }}" description="Inserts {{input}} view" toReformat="false" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="s" value="{{view &quot;select&quot; class=$class$&#10;    id=$id$ &#10;    content=$optionsObject$ //{id:1, name: 'name'}&#10;    optionValuePath=&quot;content.id&quot;&#10;    optionLabelPath=&quot;content.name&quot;&#10;    value=$selected$&#10;}}" description="Inserts view 'select'" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="optionsObject" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="selected" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="b" value="&lt;button class=&quot;btn btn-primary&quot; {{action $action$}}&gt;&#10;  $text$&#10;&lt;/button&gt;" description="Inserts button view" toReformat="false" toShortenFQNames="true">
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
