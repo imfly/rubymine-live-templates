@@ -34,20 +34,21 @@ Once you found it, `cd` into it, then (in Ubuntu)
 
 ### EmberJs.xml
 - **`a`**: "Inserts actions:{} expression"
-- **`case`**: "Inserts case expression"
+- **`c`**: "Inserts case expression"
 - **`:f`**: "Inserts property name: function(){}.property() expression"
 - **`g`**: "Inserts this.get() method"
 - **`ife`**: "Inserts if else expression"
 - **`if`**: "Inserts if(){} expression"
 - **`:`**: "Inserts property name: '' expression"
-- ...
 
-### HtmlBars.xml
+### HtmlBars.xml/Handlebars.xml
 - **`b`**: "Inserts button view"
 - **`e`**: "Inserts each expressions"
 - **`if`**: "Inserts if() expression"
 - **`i`**: "Inserts {{input}} view"
 - **`{`**: "Inserts {{}}"
+- **`lti`**: "Inserts {{link-to}} inline block"
+- **`lt`**: "Inserts {{#link-to}} {{/link-to}} block"
 - **`s`**: "Inserts view 'select'"
 - ...
 

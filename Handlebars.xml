@@ -1,0 +1,23 @@
+<templateSet group="Handlebars">
+  <template name="lt" value="{{#link-to '$route$' $parent_object$ $child_object$ $replace_true_or_false$}}&#10;    $link_to_text$&#10;{{/link-to}}" description="Inserts {{#link-to}} {{/link-to}} block" toReformat="false" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent_object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child_object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="replace_true_or_false" expression="" defaultValue="replace=true" alwaysStopAt="true" />
+    <variable name="link_to_text" expression="" defaultValue="Text" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="lti" value="{{link-to $link_to_text$ '$route$' $parent_object$ $child_object$}}&#10;" description="Inserts {{link-to}} inline block" toReformat="false" toShortenFQNames="true">
+    <variable name="link_to_text" expression="" defaultValue="Text" alwaysStopAt="false" />
+    <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent_object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="child_object" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
