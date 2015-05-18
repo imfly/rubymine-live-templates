@@ -60,6 +60,6 @@ Once you found it, `cd` into it, then (in Ubuntu)
 5. Wait
 6. Profit
 
-## MIT License
+## License
 
 [The MIT License (MIT)](https://github.com/onecoinim/rubymine-live-templates/blob/master/LICENSE)
