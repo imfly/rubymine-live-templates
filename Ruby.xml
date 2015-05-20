@@ -1,0 +1,7 @@
+<templateSet group="Ruby">
+  <template name="utf" value="# encoding: utf-8" description="Inserts encoding utf-8" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="RUBY" value="true" />
+    </context>
+  </template>
+</templateSet>

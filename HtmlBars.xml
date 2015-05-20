@@ -75,4 +75,14 @@
       <option name="HTML" value="true" />
     </context>
   </template>
+  <template name="sc" value="// The code below is the default behavior, so if this is all you&#10;// need, you do not need to provide a setupController implementation&#10;// at all.&#10;setupController: function(controller, model) {&#10;  this._super();&#10;  $code$&#10;}$end$" description="Inserts setupController() method in route" toReformat="false" toShortenFQNames="true">
+    <variable name="code" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue=";" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JSX_HTML" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>

@@ -49,7 +49,11 @@ Once you found it, `cd` into it, then (in Ubuntu)
 - **`{`**: "Inserts {{}}"
 - **`lti`**: "Inserts {{link-to}} inline block"
 - **`lt`**: "Inserts {{#link-to}} {{/link-to}} block"
+- **`sc`**: "Inserts setupController() method in route"
 - **`s`**: "Inserts view 'select'"
+
+### Ruby.xml
+- **`utf`**: "Inserts encoding utf-8"
 - ...
 
 ##Contribution
