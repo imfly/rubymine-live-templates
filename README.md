@@ -41,6 +41,11 @@ Once you found it, `cd` into it, then (in Ubuntu)
 - **`if`**: "Inserts if(){} expression"
 - **`:`**: "Inserts property name: '' expression"
 
+### Erb.xml
+- **`if`**: "&lt;% if %&gt; &lt;% end %&gt;"
+- **`re`**: "&lt;%= %&gt;"
+- **`r`**: "&lt;% %&gt;"
+
 ### HtmlBars.xml/Handlebars.xml
 - **`b`**: "Inserts button view"
 - **`e`**: "Inserts each expressions"
@@ -48,11 +53,13 @@ Once you found it, `cd` into it, then (in Ubuntu)
 - **`i`**: "Inserts {{input}} view"
 - **`{`**: "Inserts {{}}"
 - **`lti`**: "Inserts {{link-to}} inline block"
-- **`lt`**: "Inserts {{#link-to}} {{/link-to}} block"
+- **`lt`**: "{{#link-to}} {{/link-to}}"
 - **`sc`**: "Inserts setupController() method in route"
 - **`s`**: "Inserts view 'select'"
 
 ### Ruby.xml
+- **`:`**: ":key =&gt; value"
+- **`l`**: "=&gt;"
 - **`utf`**: "Inserts encoding utf-8"
 - ...
 

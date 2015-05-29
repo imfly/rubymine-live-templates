@@ -4,4 +4,20 @@
       <option name="RUBY" value="true" />
     </context>
   </template>
+  <template name=":" value=":$key$ =&gt; $value$" description=":key =&gt; value" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="l" value="=&gt; $end$" description="=&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="true" />
+      <option name="HAML" value="true" />
+    </context>
+  </template>
 </templateSet>

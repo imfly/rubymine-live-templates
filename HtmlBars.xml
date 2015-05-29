@@ -47,8 +47,8 @@
     </context>
   </template>
   <template name="b" value="&lt;button class=&quot;btn btn-primary&quot; {{action $action$}}&gt;&#10;  $text$&#10;&lt;/button&gt;" description="Inserts button view" toReformat="false" toShortenFQNames="true">
-    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action" expression="" defaultValue="&quot;'action'&quot;" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -64,12 +64,12 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="lt" value="{{#link-to '$route$' $parent_object$ $child_object$ $replace_true_or_false$}}&#10;    $link_to_text$&#10;{{/link-to}}" description="Inserts {{#link-to}} {{/link-to}} block" toReformat="false" toShortenFQNames="true">
-    <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="lt" value="{{#link-to '$route$' $parent_object$ $child_object$ $replace_true_or_false$}}&#10;    $link_to_text$&#10;{{/link-to}}" description="{{#link-to}} {{/link-to}}" toReformat="true" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="&quot;route&quot;" alwaysStopAt="true" />
+    <variable name="replace_true_or_false" expression="" defaultValue="&quot;replace=true&quot;" alwaysStopAt="true" />
+    <variable name="link_to_text" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
     <variable name="parent_object" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="child_object" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="replace_true_or_false" expression="" defaultValue="replace=true" alwaysStopAt="true" />
-    <variable name="link_to_text" expression="" defaultValue="Text" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
