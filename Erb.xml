@@ -1,0 +1,21 @@
+<templateSet group="Erb">
+  <template name="re" value="&lt;%= $expression$ %&gt;" description="&lt;%= %&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="expression" expression="" defaultValue="expression" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="r" value="&lt;% $expression$ %&gt;" description="&lt;% %&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="expression" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+  <template name="if" value="&lt;% if $method$ %&gt; &#10;   &lt;% $content$ %&gt;&#10;&lt;% end %&gt;" description="&lt;% if %&gt; &lt;% end %&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="RHTML" value="true" />
+    </context>
+  </template>
+</templateSet>
