@@ -1,0 +1,23 @@
+<templateSet group="Ejs">
+  <template name="__" value="&lt;%= __('$key$') %&gt;" description="&lt;%= __('key') %&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="key" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="re" value="&lt;%= $var$ %&gt;" description="&lt;%= var %&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="r" value="&lt;%- $var$ %&gt;" description="&lt;%- var %&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
